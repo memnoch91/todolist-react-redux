@@ -2,9 +2,11 @@
   "name": "todolist-react-redux",
   "version": "0.1.0",
   "description": "attempt3",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/memnoch91/todolist-react-redux/issues"
   },
-  "homepage": "https://github.com/memnoch91/todolist-react-redux#readme"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.5.0"
+  },
+  "homepage": "https://github.com/memnoch91/todolist-react-redux#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
 }
